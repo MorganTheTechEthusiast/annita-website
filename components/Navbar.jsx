@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import { FaBars, FaTimes, FaSun, FaMoon } from "react-icons/fa";
 import {
   Home,
   ShoppingCart,
@@ -14,13 +14,34 @@ import {
   HelpCircle,
 } from "lucide-react";
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  useEffect(() => {
+    // Check local storage for theme preference
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setIsDarkMode(savedTheme === "dark");
+    }
+  }, []);
+
+  useEffect(() => {
+    // Apply the theme class to the body
+    document.body.classList.toggle("dark", isDarkMode);
+    // Save the theme preference to local storage
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+  }, [isDarkMode]);
 
   return (
     <nav className="bg-earth-brown p-4 shadow-md fixed w-full z-10">
@@ -90,6 +111,9 @@ const Navbar = () => {
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
+        <Button onClick={toggleTheme} className="text-white ml-4 dark:bg-black">
+          {isDarkMode ? <FaSun /> : <FaMoon />}
+        </Button>
       </div>
       {isOpen && (
         <div className="md:hidden bg-earth-brown p-4">

@@ -119,3 +119,45 @@
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  background-color: #f0f0f0; /* Light mode background */
+  color: #333; /* Light mode text color */
+}
+
+body.dark {
+  background-color: #1a1a1a; /* Dark mode background */
+  color: #f0f0f0; /* Dark mode text color */
+}
+
+/* Additional styles for dark mode */
+.navbar {
+  background-color: #333; /* Dark mode navbar background */
+}
+
+/* You can also add styles for other elements in dark mode */
+/* Additional styles for dark mode */
+.navbar {
+  background-color: #333; /* Dark mode navbar background */
+}
+
+.button {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Button text color */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Button hover color */
+}
+
+.text-muted {
+  color: #6c757d; /* Muted text color */
+}
+
+.text-success {
+  color: #28a745; /* Success text color */
+}
+
+.text-danger {
+  color: #dc3545; /* Danger text color */
+}
