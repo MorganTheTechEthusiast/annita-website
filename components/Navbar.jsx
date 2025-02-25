@@ -22,9 +22,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent p-4 shadow-md fixed w-full z-10">
+    <nav className="bg-earth-brown p-4 shadow-md fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-white text-2xl font-bold">Annita</h1>
+        <Link href="/">
+          <h1 className="text-white text-2xl font-bold">Annita</h1>
+        </Link>
         <div className="hidden md:flex space-x-4">
           <Link
             href="/"

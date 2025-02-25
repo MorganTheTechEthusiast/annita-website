@@ -22,7 +22,9 @@ export const metadata = {
 const Layout = ({ children }) => {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${roboto.variable} antialiased`}>
+      <body
+        className={`${inter.variable} ${roboto.variable} antialiased bg-gray-100 text-gray-800`}
+      >
         <Navbar />
         <main>{children}</main>
       </body>
