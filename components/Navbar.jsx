@@ -7,7 +7,7 @@ import {
   Home,
   ShoppingCart,
   Users,
-  Tool,
+  Settings,
   Info,
   Mail,
   FileText,
@@ -48,7 +48,7 @@ const Navbar = () => {
             href="/thrive-toolkit"
             className="text-white hover:text-vibrant-orange flex items-center"
           >
-            <Tool className="mr-2" /> Thrive Toolkit
+            <Settings className="mr-2" /> Thrive Toolkit
           </Link>
           <Link
             href="/about"
@@ -113,7 +113,7 @@ const Navbar = () => {
                 href="/thrive-toolkit"
                 className="text-white hover:text-vibrant-orange flex items-center"
               >
-                <Tool className="mr-2" /> Thrive Toolkit
+                <Settings className="mr-2" /> Thrive Toolkit
               </Link>
             </li>
             <li>
