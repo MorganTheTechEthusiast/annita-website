@@ -6,13 +6,13 @@ Welcome, Developers! This document serves as the blueprint for **Annita**—a bo
 
 ## Project Overview
 
-**Annita** isn’t your typical SaaS platform. It’s a digital powerhouse that seamlessly combines African authenticity with cutting-edge innovation. Our aim is to provide an electrifying experience that transforms shopping, connecting, and thriving into something truly extraordinary. 🔥
+**Annita** isn't your typical SaaS platform. It's a digital powerhouse that seamlessly combines African authenticity with cutting-edge innovation. Our aim is to provide an electrifying experience that transforms shopping, connecting, and thriving into something truly extraordinary. 🔥
 
 ---
 
 ## Vision: Africa Without Borders 🌍
 
-Our mission is to shatter limitations and build a digital universe where Africa’s talents, products, and voices aren’t just heard—they **ROAR**. By empowering users with global opportunities, Annita celebrates the rich diversity and dynamic energy of African life.
+Our mission is to shatter limitations and build a digital universe where Africa's talents, products, and voices aren't just heard—they **ROAR**. By empowering users with global opportunities, Annita celebrates the rich diversity and dynamic energy of African life.
 
 ---
 
@@ -36,12 +36,14 @@ Our mission is to shatter limitations and build a digital universe where Africa�
 
 ## Design & Branding
 
-- **Logo:** A sleek, stylized “A” wrapped in interconnected cycles, symbolizing unity and the powerful connection between Africa and the world.
-- **Imagery:** Real, raw, and relatable visuals capturing Africa’s youth, vibrancy, and diverse cultures.
+- **Logo:** A sleek, stylized "A" wrapped in interconnected cycles, symbolizing unity and the powerful connection between Africa and the world.
+- **Imagery:** Real, raw, and relatable visuals capturing Africa's youth, vibrancy, and diverse cultures.
 - **Typography:**
   - **Primary:** _Poppins_ – Modern, open-source, and innovative.
   - **Secondary:** _Zen Dots_ – A serif typeface that adds elegance and sophistication.
 - **Color Palette:** Bold and warm earthy tones accented with electric hues to evoke both tradition and modern energy. 🎨
+- **Design Inspiration:**
+  - For a modern and vibrant design approach, we draw inspiration from [Flutterwave](https://flutterwave.com/eu). Their use of color, typography, and layout exemplifies how to create an engaging user experience that resonates with a diverse audience.
 
 ---
 
@@ -69,8 +71,18 @@ Our mission is to shatter limitations and build a digital universe where Africa�
 
 - **Landing Page:**
 
-  - Serves as the primary entry point, showcasing Annita’s unique value proposition and key features.
+  - Serves as the primary entry point, showcasing Annita's unique value proposition and key features.
   - Includes intuitive navigation to secondary pages (e.g., Marketplace, Community Hub, Thrive Toolkit, About Us).
+
+- **Additional Pages for Navigation:**
+
+  - **Marketplace:** A dedicated page for users to explore and purchase unique African products.
+  - **Community Hub:** A space for users to connect, share stories, and build communities.
+  - **Thrive Toolkit:** A resource center offering tools and guides for personal and business growth.
+  - **About Us:** A page detailing Annita's mission, vision, and the team behind the platform.
+  - **Contact Us:** A page for users to reach out with inquiries, feedback, or support.
+  - **Blog:** A section for articles, updates, and stories related to African culture, products, and the digital landscape.
+  - **FAQ:** A page addressing common questions and concerns from users.
 
 - **Responsive Design:**
 
@@ -103,7 +115,7 @@ Our mission is to shatter limitations and build a digital universe where Africa�
 
 ## Final Thoughts
 
-Annita is more than just a SaaS app—it’s a movement. This context document is your go-to guide for aligning with our vision and creating a digital platform that celebrates Africa’s spirit on a global stage. Let’s build something extraordinary together! 💥
+Annita is more than just a SaaS app—it's a movement. This context document is your go-to guide for aligning with our vision and creating a digital platform that celebrates Africa's spirit on a global stage. Let's build something extraordinary together! 💥
 
 _Feel free to update or expand upon this context as our project evolves._
 

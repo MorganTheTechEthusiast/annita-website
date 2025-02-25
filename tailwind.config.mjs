@@ -69,6 +69,13 @@ export default {
           DEFAULT: "hsl(var(--info))",
           foreground: "hsl(var(--info-foreground))",
         },
+        "earth-brown": "#7B5B3A",
+        "earth-beige": "#D9CBAE",
+        "earth-green": "#4A7C2A",
+        "earth-terracotta": "#C65D3B",
+        "vibrant-orange": "#FF6F20",
+        "vibrant-blue": "#007BFF",
+        "vibrant-yellow": "#FFD700",
       },
       borderRadius: {
         lg: "var(--radius)",
