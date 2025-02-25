@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,18 +64,7 @@ const Navbar = () => {
           >
             <Home className="mr-2" /> Home
           </Link>
-          <Link
-            href="/marketplace"
-            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
-          >
-            <ShoppingCart className="mr-2" /> Marketplace
-          </Link>
-          <Link
-            href="/community"
-            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
-          >
-            <Users className="mr-2" /> Community Hub
-          </Link>
+          <Dropdown>Explore</Dropdown>
           <Link
             href="/thrive-toolkit"
             className="text-white hover:text-vibrant-yellow flex items-center text-sm"
@@ -132,20 +122,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link
-                href="/marketplace"
-                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
-              >
-                <ShoppingCart className="mr-2" /> Marketplace
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/community"
-                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
-              >
-                <Users className="mr-2" /> Community Hub
-              </Link>
+              <Dropdown>Explore</Dropdown>
             </li>
             <li>
               <Link
