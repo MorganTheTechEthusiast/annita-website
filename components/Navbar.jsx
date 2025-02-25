@@ -44,7 +44,7 @@ const Navbar = () => {
   }, [isDarkMode]);
 
   return (
-    <nav className="bg-earth-brown p-4 shadow-md fixed w-full z-10">
+    <nav className="bg-vibrant-orange p-4 shadow-md fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <Image
@@ -54,54 +54,54 @@ const Navbar = () => {
             width={50}
             height={50}
           />
-          <h1 className="text-white text-2xl font-bold">Annita</h1>
+          <h1 className="text-white text-xl font-bold">Annita</h1>
         </Link>
         <div className="hidden md:flex space-x-4">
           <Link
             href="/"
-            className="text-white hover:text-vibrant-orange flex items-center"
+            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <Home className="mr-2" /> Home
           </Link>
           <Link
             href="/marketplace"
-            className="text-white hover:text-vibrant-orange flex items-center"
+            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <ShoppingCart className="mr-2" /> Marketplace
           </Link>
           <Link
             href="/community"
-            className="text-white hover:text-vibrant-orange flex items-center"
+            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <Users className="mr-2" /> Community Hub
           </Link>
           <Link
             href="/thrive-toolkit"
-            className="text-white hover:text-vibrant-orange flex items-center"
+            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <Settings className="mr-2" /> Thrive Toolkit
           </Link>
           <Link
             href="/about"
-            className="text-white hover:text-vibrant-orange flex items-center"
+            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <Info className="mr-2" /> About Us
           </Link>
           <Link
             href="/contact"
-            className="text-white hover:text-vibrant-orange flex items-center"
+            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <Mail className="mr-2" /> Contact Us
           </Link>
           <Link
             href="/blog"
-            className="text-white hover:text-vibrant-orange flex items-center"
+            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <FileText className="mr-2" /> Blog
           </Link>
           <Link
             href="/faq"
-            className="text-white hover:text-vibrant-orange flex items-center"
+            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <HelpCircle className="mr-2" /> FAQ
           </Link>
@@ -116,12 +116,12 @@ const Navbar = () => {
         </Button>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-earth-brown p-4">
+        <div className="md:hidden bg-vibrant-orange p-4">
           <ul className="flex flex-col space-y-2">
             <li>
               <Link
                 href="/"
-                className="text-white hover:text-vibrant-orange flex items-center"
+                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
               >
                 <Home className="mr-2" /> Home
               </Link>
@@ -129,7 +129,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/marketplace"
-                className="text-white hover:text-vibrant-orange flex items-center"
+                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
               >
                 <ShoppingCart className="mr-2" /> Marketplace
               </Link>
@@ -137,7 +137,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/community"
-                className="text-white hover:text-vibrant-orange flex items-center"
+                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
               >
                 <Users className="mr-2" /> Community Hub
               </Link>
@@ -145,7 +145,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/thrive-toolkit"
-                className="text-white hover:text-vibrant-orange flex items-center"
+                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
               >
                 <Settings className="mr-2" /> Thrive Toolkit
               </Link>
@@ -153,7 +153,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/about"
-                className="text-white hover:text-vibrant-orange flex items-center"
+                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
               >
                 <Info className="mr-2" /> About Us
               </Link>
@@ -161,7 +161,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/contact"
-                className="text-white hover:text-vibrant-orange flex items-center"
+                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
               >
                 <Mail className="mr-2" /> Contact Us
               </Link>
@@ -169,7 +169,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/blog"
-                className="text-white hover:text-vibrant-orange flex items-center"
+                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
               >
                 <FileText className="mr-2" /> Blog
               </Link>
@@ -177,7 +177,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/faq"
-                className="text-white hover:text-vibrant-orange flex items-center"
+                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
               >
                 <HelpCircle className="mr-2" /> FAQ
               </Link>
