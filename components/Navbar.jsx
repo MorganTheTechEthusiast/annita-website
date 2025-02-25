@@ -13,6 +13,7 @@ import {
   FileText,
   HelpCircle,
 } from "lucide-react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,14 @@ const Navbar = () => {
   return (
     <nav className="bg-earth-brown p-4 shadow-md fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/">
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="Annita Logo"
+            className="mr-2"
+            width={50}
+            height={50}
+          />
           <h1 className="text-white text-2xl font-bold">Annita</h1>
         </Link>
         <div className="hidden md:flex space-x-4">
