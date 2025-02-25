@@ -44,7 +44,7 @@ const Navbar = () => {
   }, [isDarkMode]);
 
   return (
-    <nav className="bg-vibrant-orange p-4 shadow-md fixed w-full z-10">
+    <nav className="bg-vibrant-orange p-4 shadow-md fixed w-full z-20">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <Image
@@ -106,17 +106,22 @@ const Navbar = () => {
             <HelpCircle className="mr-2" /> FAQ
           </Link>
         </div>
-        <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-white">
-            {isOpen ? <FaTimes /> : <FaBars />}
-          </button>
+        <div className="flex items-center">
+          <Button
+            onClick={toggleTheme}
+            className="text-white ml-4 dark:bg-black"
+          >
+            {isDarkMode ? <FaSun /> : <FaMoon />}
+          </Button>
+          <div className="md:hidden ml-2">
+            <button onClick={toggleMenu} className="text-white text-2xl p-2">
+              {isOpen ? <FaTimes /> : <FaBars />}
+            </button>
+          </div>
         </div>
-        <Button onClick={toggleTheme} className="text-white ml-4 dark:bg-black">
-          {isDarkMode ? <FaSun /> : <FaMoon />}
-        </Button>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-vibrant-orange p-4">
+        <div className="md:hidden bg-vibrant-orange p-4 z-10">
           <ul className="flex flex-col space-y-2">
             <li>
               <Link
