@@ -45,7 +45,7 @@ const Navbar = () => {
   }, [isDarkMode]);
 
   return (
-    <nav className="bg-vibrant-orange p-4 shadow-md fixed w-full z-20">
+    <nav className="bg-vibrant-orange p-4 shadow-md w-full z-20 fixed top-0 right-0 left-0">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <Image

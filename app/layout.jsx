@@ -1,6 +1,6 @@
 import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
         className={`${inter.variable} ${roboto.variable} antialiased bg-gray-100 text-gray-800`}
       >
         <Navbar />
-        <main>{children}</main>
+        <main className="min-h-screen mt-20">{children}</main>
       </body>
     </html>
   );
