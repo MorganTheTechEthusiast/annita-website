@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const TrustedBySection = () => {
   return (
     <section className="py-20 bg-gray-100 dark:bg-black/20">
@@ -8,13 +10,48 @@ const TrustedBySection = () => {
           We are trusted by
         </h2>
         <div className="flex flex-wrap justify-center items-center gap-8">
-          <img src="/logos/uber.png" alt="Uber" className="h-12" />
-          <img src="/logos/mtn.png" alt="MTN" className="h-12" />
-          <img src="/logos/chipper.png" alt="Chipper" className="h-12" />
-          <img src="/logos/piggyvest.png" alt="PiggyVest" className="h-12" />
-          <img src="/logos/wise.png" alt="Wise" className="h-12" />
-          <img src="/logos/microsoft.png" alt="Microsoft" className="h-12" />
-          <img src="/logos/airpeace.png" alt="Air Peace" className="h-12" />
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Uber_logo_2018.png"
+            alt="Uber"
+            width={100}
+            height={50}
+          />
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/en/2/2f/MTN_Group_logo.svg"
+            alt="MTN"
+            width={100}
+            height={50}
+          />
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/en/3/3e/Chipper_logo.png"
+            alt="Chipper"
+            width={100}
+            height={50}
+          />
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/en/4/4e/PiggyVest_Logo.png"
+            alt="PiggyVest"
+            width={100}
+            height={50}
+          />
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/en/3/3e/Wise_logo.svg"
+            alt="Wise"
+            width={100}
+            height={50}
+          />
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Microsoft_logo.svg"
+            alt="Microsoft"
+            width={100}
+            height={50}
+          />
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/en/5/5e/Air_Peace_logo.png"
+            alt="Air Peace"
+            width={100}
+            height={50}
+          />
         </div>
       </div>
     </section>
