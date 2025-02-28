@@ -1,6 +1,6 @@
 import FeaturesSection from "@/components/FeaturesSection";
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import TrustedBySection from "@/components/TrustedBySection";
 import React from "react";
 
 const Home = () => {
@@ -12,6 +12,9 @@ const Home = () => {
 
         {/* Features Section */}
         <FeaturesSection />
+
+        {/* TrustedBy Section */}
+        <TrustedBySection />
       </section>
     </div>
   );
