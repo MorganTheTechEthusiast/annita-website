@@ -15,8 +15,9 @@ const HeroSection = () => {
             Africa's Digital Heartbeat
           </h3>
           <p className="text-xl md:text-2xl mb-10 mt-10">
-            Unlocking boundless opportunities for enterprises, individuals,
-            small businesses, emerging markets, and startups alike.
+            Unlocking limitless opportunities for enterprises, individuals,
+            small businesses, emerging markets, and startups alike, fostering
+            growth and innovation across diverse sectors and communities.
           </p>
           <Link
             href="/marketplace"

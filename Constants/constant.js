@@ -28,21 +28,21 @@ export const services = [
     ),
     title: "Online Checkout",
     description:
-      "Our online checkout features our smart payment ordering system, incredible speed, and beautiful simplicity.",
+      "Our online checkout integrates a smart payment ordering system that ensures incredible speed and elegant simplicity. It is meticulously designed to enhance your revenue while delivering an exceptional payment experience for your customers.",
     buttonText: "Get Started",
   },
   {
     icon: <FaMoneyBillWave className="text-vibrant-orange text-4xl mb-4" />,
     title: "Accept Payments",
     description:
-      "Easily receive money from anyone, anywhere in the world via our multitude of secure payment methods.",
+      "Easily receive money from anyone, anywhere in the world via our multitude of secure payment methods, ensuring safety and convenience for all transactions while providing a seamless experience for both senders and recipients.",
     buttonText: "Learn More >",
   },
   {
     icon: <FaHandshake className="text-vibrant-orange text-4xl mb-4" />,
     title: "Transfers (Payout)",
     description:
-      "Make single or bulk transfers to bank accounts from your Flutterwave dashboard.",
+      "Effortlessly execute single or bulk transfers to bank accounts directly from your Annita dashboard, streamlining your financial operations with ease and efficiency.",
     buttonText: "Learn More >",
   },
 ];

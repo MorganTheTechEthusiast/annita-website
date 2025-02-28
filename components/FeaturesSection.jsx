@@ -1,6 +1,6 @@
 "use client";
 
-import { features } from "@/Constants/services";
+import { features } from "@/Constants/constant";
 
 const FeaturesSection = () => {
   return (
