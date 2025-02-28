@@ -25,7 +25,15 @@ const HeroSection = () => {
             Explore Marketplace
           </Link>
         </div>
-        <div className=""></div>
+        <div className="hidden md:block items-center mt-11">
+          <Image
+            src="/bg_image.png"
+            alt="Hero Image"
+            width={600}
+            height={400}
+            className="rounded-lg  transition hover:shadow-lg"
+          />
+        </div>
       </div>
     </section>
   );
