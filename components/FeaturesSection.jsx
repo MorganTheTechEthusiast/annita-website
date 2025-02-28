@@ -24,15 +24,24 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20 px-6 bg-gray-100 dark:bg-black/20">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-8">Key Features</h2>
+        <h2 className="text-4xl font-bold mb-8 text-gray-800 dark:text-gray-300">
+          Key Features
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="p-6 bg-white rounded-lg shadow-md">
+            <div
+              key={index}
+              className="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md"
+            >
               {feature.icon}
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
+                {feature.title}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>

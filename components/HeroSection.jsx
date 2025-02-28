@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-[95vh] dark:text-gray-300 text-gray-600 md:px-16 py-20 flex items-center">
-      <div className="container mx-auto flex justify-between items-center">
+    <section className="relative h-[50vh] md:h-[95vh] dark:text-gray-300 text-gray-600 md:px-16 py-20 flex items-center">
+      <div className="container mt-8 mx-auto flex justify-between items-center">
         <div className="md:w-1/2 md:text-left z-10 text-center">
           <h1 className="text-6xl md:text-8xl font-extrabold mb-4 mt-6 text-vibrant-orange">
             Meet Annita,
