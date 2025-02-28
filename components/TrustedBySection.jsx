@@ -10,44 +10,29 @@ const TrustedBySection = () => {
           We are trusted by
         </h2>
         <div className="flex flex-wrap justify-center items-center gap-8">
+          <Image src="/uber_logo.png" alt="Uber" width={100} height={50} />
+          <Image src="/mtn-logo.png" alt="MTN" width={100} height={50} />
           <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Uber_logo_2018.png"
-            alt="Uber"
-            width={100}
-            height={50}
-          />
-          <Image
-            src="https://upload.wikimedia.org/wikipedia/en/2/2f/MTN_Group_logo.svg"
-            alt="MTN"
-            width={100}
-            height={50}
-          />
-          <Image
-            src="https://upload.wikimedia.org/wikipedia/en/3/3e/Chipper_logo.png"
+            src="/chipper_logo.png"
             alt="Chipper"
             width={100}
             height={50}
           />
           <Image
-            src="https://upload.wikimedia.org/wikipedia/en/4/4e/PiggyVest_Logo.png"
+            src="/piggyvest_logo.png"
             alt="PiggyVest"
             width={100}
             height={50}
           />
+          <Image src="/wise_logo.svg" alt="Wise" width={100} height={50} />
           <Image
-            src="https://upload.wikimedia.org/wikipedia/en/3/3e/Wise_logo.svg"
-            alt="Wise"
-            width={100}
-            height={50}
-          />
-          <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Microsoft_logo.svg"
+            src="microsoft_logo.svg"
             alt="Microsoft"
             width={100}
             height={50}
           />
           <Image
-            src="https://upload.wikimedia.org/wikipedia/en/5/5e/Air_Peace_logo.png"
+            src="/airpeace_logo.svg"
             alt="Air Peace"
             width={100}
             height={50}
