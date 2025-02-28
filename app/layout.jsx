@@ -1,6 +1,8 @@
 import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import FeaturesSection from "@/components/FeaturesSection";
 
 const inter = Inter({
   variable: "--font-inter",
