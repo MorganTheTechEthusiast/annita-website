@@ -5,30 +5,27 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-[100%] bg-gradient-to-r from-vibrant-orange to-vibrant-yellow text-gray-100 py-20">
-      <div className="container mx-auto text-center relative z-10">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Welcome to Annita
-        </h1>
-        <p className="text-lg md:text-xl mb-6">
-          Africa's First all-in-one platform,
-          <br /> combining e-commerce, Fintech, AI, and lifestyle services.
-        </p>
-        <Link
-          href="/marketplace"
-          className="bg-white text-vibrant-orange py-3 px-6 rounded-md font-semibold hover:bg-gray-200 transition cursor-pointer"
-        >
-          Explore Marketplace
-        </Link>
-      </div>
-      <div className="absolute inset-0">
-        <Image
-          src="/bg.png"
-          alt="Hero Background"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-30"
-        />
+    <section className="relative h-[95vh] dark:text-gray-300 text-gray-600 md:px-16 py-20 flex items-center">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="md:w-1/2 md:text-left z-10 text-center">
+          <h1 className="text-6xl md:text-8xl font-extrabold mb-4 mt-6 text-vibrant-orange">
+            Meet Annita,
+          </h1>
+          <h3 className="text-2xl md:text-4xl font-extrabold mb-4 mt-2 text-vibrant-orange">
+            Africa's Digital Heartbeat
+          </h3>
+          <p className="text-xl md:text-2xl mb-10 mt-10">
+            Unlocking boundless opportunities for enterprises, individuals,
+            small businesses, emerging markets, and startups alike.
+          </p>
+          <Link
+            href="/marketplace"
+            className="bg-black text-vibrant-orange sm:w-4 py-4 px-8 rounded-lg font-semibold transition-colors cursor-pointer"
+          >
+            Explore Marketplace
+          </Link>
+        </div>
+        <div className=""></div>
       </div>
     </section>
   );

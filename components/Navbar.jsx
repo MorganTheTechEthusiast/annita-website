@@ -45,53 +45,53 @@ const Navbar = () => {
   }, [isDarkMode]);
 
   return (
-    <nav className="bg-vibrant-orange p-4 shadow-md w-full z-20 fixed top-0 right-0 left-0">
+    <nav
+      className={`backdrop-blur-md bg-white/30 dark:bg-black/30 p-4 shadow-md fixed w-full z-20 top-0 left-0 right-0`}
+    >
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/logo.png"
-            alt="Annita Logo"
-            className="mr-2"
-            width={50}
-            height={50}
-          />
-          <h1 className="text-white text-xl font-bold">Annita</h1>
+        <Link href="/" className="flex gap-2 items-center">
+          <Image src="/logo.png" alt="Annita Logo" width={50} height={50} />
+          <h1 className="text-gray-800 dark:text-white text-xl font-bold">
+            Annita
+          </h1>
         </Link>
         <div className="hidden md:flex space-x-4">
           <Link
             href="/"
-            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
+            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <Home className="mr-2" /> Home
           </Link>
-          <Dropdown>Explore</Dropdown>
+          <Dropdown className="text-gray-800 transition-all dark:text-white dark:hover:text-vibrant-yellow hover:text-vibrant-yellow flex items-center text-sm">
+            Explore
+          </Dropdown>
           <Link
             href="/thrive-toolkit"
-            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
+            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <Settings className="mr-2" /> Thrive Toolkit
           </Link>
           <Link
             href="/about"
-            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
+            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <Info className="mr-2" /> About Us
           </Link>
           <Link
             href="/contact"
-            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
+            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <Mail className="mr-2" /> Contact Us
           </Link>
           <Link
             href="/blog"
-            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
+            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <FileText className="mr-2" /> Blog
           </Link>
           <Link
             href="/faq"
-            className="text-white hover:text-vibrant-yellow flex items-center text-sm"
+            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
           >
             <HelpCircle className="mr-2" /> FAQ
           </Link>
@@ -99,35 +99,40 @@ const Navbar = () => {
         <div className="flex items-center">
           <Button
             onClick={toggleTheme}
-            className="text-white ml-4 dark:bg-black"
+            className="text-gray-100 dark:bg-gray-400 bg-black dark:text-black ml-4"
           >
             {isDarkMode ? <FaSun /> : <FaMoon />}
           </Button>
           <div className="md:hidden ml-2">
-            <button onClick={toggleMenu} className="text-white text-2xl p-2">
+            <button
+              onClick={toggleMenu}
+              className="text-gray-800 dark:text-gray-400 text-2xl p-2"
+            >
               {isOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-vibrant-orange p-4 z-10">
+        <div className="md:hidden bg-white/30 dark:bg-black/30 p-4 z-10">
           <ul className="flex flex-col space-y-2">
             <li>
               <Link
                 href="/"
-                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
+                className="text-gray-800 dark:text-white hover:text-vibrant-yellow transition-colors flex items-center text-sm"
               >
                 <Home className="mr-2" /> Home
               </Link>
             </li>
             <li>
-              <Dropdown>Explore</Dropdown>
+              <Dropdown className="text-gray-800 dark:text-white hover:text-vibrant-yellow flex items-center text-sm">
+                Explore
+              </Dropdown>
             </li>
             <li>
               <Link
                 href="/thrive-toolkit"
-                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
+                className="text-gray-800 dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
               >
                 <Settings className="mr-2" /> Thrive Toolkit
               </Link>
@@ -135,7 +140,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/about"
-                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
+                className="text-gray-800 dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
               >
                 <Info className="mr-2" /> About Us
               </Link>
@@ -143,7 +148,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/contact"
-                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
+                className="text-gray-800 dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
               >
                 <Mail className="mr-2" /> Contact Us
               </Link>
@@ -151,7 +156,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/blog"
-                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
+                className="text-gray-800 dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
               >
                 <FileText className="mr-2" /> Blog
               </Link>
@@ -159,7 +164,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/faq"
-                className="text-white hover:text-vibrant-yellow flex items-center text-sm"
+                className="text-gray-800 dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
               >
                 <HelpCircle className="mr-2" /> FAQ
               </Link>

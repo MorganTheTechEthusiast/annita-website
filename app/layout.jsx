@@ -16,7 +16,7 @@ const roboto = Roboto({
 export const metadata = {
   title: "Annita | Africa's Digital Heartbeat",
   description:
-    "Annita isn't your typical SaaS platform. It's a digital powerhouse that seamlessly combines African authenticity with cutting-edge innovation",
+    "Your digital powerhouse that seamlessly combines African authenticity with cutting-edge innovation",
 };
 
 const Layout = ({ children }) => {
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
         className={`${inter.variable} ${roboto.variable} antialiased bg-gray-100 text-gray-800`}
       >
         <Navbar />
-        <main className="min-h-screen mt-20">{children}</main>
+        <main className="min-h-screen">{children}</main>
       </body>
     </html>
   );

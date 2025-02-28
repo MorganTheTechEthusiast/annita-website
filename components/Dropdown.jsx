@@ -16,10 +16,10 @@ const Dropdown = ({ children }) => {
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger>
-        <button className="text-white hover:text-vibrant-yellow flex items-center gap-1">
+        <div className="dark:text-white text-gray-600 hover:text-vibrant-yellow flex items-center gap-1 cursor-pointer">
           {children}
           {open ? <FaChevronUp /> : <FaChevronDown />}
-        </button>
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-vibrant-orange">
         <DropdownMenuItem>
