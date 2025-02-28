@@ -13,7 +13,7 @@ const TrustedBySection = () => {
           <Image src="/uber_logo.png" alt="Uber" width={100} height={50} />
           <Image src="/mtn-logo.png" alt="MTN" width={100} height={50} />
           <Image
-            src="/chipper_logo.png"
+            src="/chipper_logo.svg"
             alt="Chipper"
             width={100}
             height={50}
