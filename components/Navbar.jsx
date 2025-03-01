@@ -62,7 +62,7 @@ const Navbar = () => {
           >
             <Home className="mr-2" /> Home
           </Link>
-          <Dropdown className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple hover:text-vibrant-purple flex items-center text-sm">
+          <Dropdown className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm">
             Explore
           </Dropdown>
           <Link

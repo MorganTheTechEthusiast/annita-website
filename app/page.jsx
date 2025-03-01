@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import ShowCaseSection from "@/components/ShowCaseSection";
 import TrustedBySection from "@/components/TrustedBySection";
+import SmallBusinessSection from "@/components/SmallBusinessSection";
 import React from "react";
 
 const Home = () => {
@@ -20,9 +21,11 @@ const Home = () => {
 
         {/* TrustedBy Section */}
         <TrustedBySection />
-
         {/* Services Section */}
         <ServicesSection />
+
+        {/* Small Business Section */}
+        <SmallBusinessSection />
       </section>
     </div>
   );
