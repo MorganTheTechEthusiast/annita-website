@@ -28,10 +28,14 @@ const ShowCaseSection = () => {
       </div>
       <div className="flex md:max-w-[30rem] md:px-0 px-20 items-center justify-center  md:relative flex-wrap right-0 md:ml-[50rem] md:bottom-56">
         <p className="text-wrap text-3xl font-thin">
-          Send money home to loved ones, sell online as a small business,
-          process global payments as an enterprise, build financial products as
-          a startup. With Flutterwave, the question isn't what's possible—it is:
-          what isn't?
+          <span className="text-vibrant-purple bg-vibrant-blue">Whether</span>{" "}
+          you're sending money to family, launching your online store, managing
+          global transactions for your enterprise, or creating innovative
+          financial solutions as a startup,{" "}
+          <span className="text-vibrant-orange">Annita</span>{" "}
+          <span className="bg-vibrant-orange text-white p-2">empowers</span> you
+          to explore limitless possibilities. The real question isn't what you
+          can achieve—it's what will you create next?
         </p>
       </div>
     </section>
