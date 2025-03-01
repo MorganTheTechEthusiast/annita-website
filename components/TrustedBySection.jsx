@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const TrustedBySection = () => {
   return (
-    <section className="py-20 bg-gray-100 dark:bg-black/20">
+    <section className="py-20 px-20 bg-gray-100 dark:bg-black/20">
       <div className="container mx-auto text-center">
-        <h2 className="text-xl mb-3 text-black/60 dark:text-gray-300">
+        <h2 className="text-2xl mb-3 text-black/60 dark:text-gray-300">
           We are trusted by <span className="font-extrabold">1 million+</span>{" "}
           businesses & <span className="font-extrabold">2 million+ </span>
           individuals
         </h2>
-        <div className="flex flex-wrap justify-center items-center gap-8 bg-black/20 rounded-md dark:bg-white/50 dark:rounded-md">
+        <div className="flex mt-10 flex-wrap justify-center items-center gap-8 bg-black/20 rounded-md dark:bg-white/50 dark:rounded-md">
           <Image src="/uber_logo.png" alt="Uber" width={100} height={50} />
           <Image src="/mtn-logo.png" alt="MTN" width={100} height={50} />
           <Image

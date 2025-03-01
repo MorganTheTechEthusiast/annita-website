@@ -21,11 +21,11 @@ const Dropdown = ({ children }) => {
           {open ? <FaChevronUp /> : <FaChevronDown />}
         </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="bg-vibrant-orange">
+      <DropdownMenuContent className="bg-earth-green">
         <DropdownMenuItem>
           <Link
             href="/marketplace"
-            className="text-white hover:text-vibrant-yellow"
+            className="text-white hover:text-vibrant-purple"
           >
             Marketplace
           </Link>
@@ -33,9 +33,17 @@ const Dropdown = ({ children }) => {
         <DropdownMenuItem>
           <Link
             href="/community"
-            className="text-white hover:text-vibrant-yellow"
+            className="text-white hover:text-vibrant-purple"
           >
             Community Hub
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <Link
+            href="/checkout"
+            className="text-white hover:text-vibrant-purple"
+          >
+            Checkout
           </Link>
         </DropdownMenuItem>
       </DropdownMenuContent>

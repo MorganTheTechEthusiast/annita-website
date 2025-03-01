@@ -58,40 +58,40 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4">
           <Link
             href="/"
-            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
+            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm"
           >
             <Home className="mr-2" /> Home
           </Link>
-          <Dropdown className="text-gray-800 transition-all dark:text-white dark:hover:text-vibrant-yellow hover:text-vibrant-yellow flex items-center text-sm">
+          <Dropdown className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple hover:text-vibrant-purple flex items-center text-sm">
             Explore
           </Dropdown>
           <Link
             href="/thrive-toolkit"
-            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
+            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm"
           >
             <Settings className="mr-2" /> Thrive Toolkit
           </Link>
           <Link
             href="/about"
-            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
+            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm"
           >
             <Info className="mr-2" /> About Us
           </Link>
           <Link
             href="/contact"
-            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
+            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm"
           >
             <Mail className="mr-2" /> Contact Us
           </Link>
           <Link
             href="/blog"
-            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
+            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm"
           >
             <FileText className="mr-2" /> Blog
           </Link>
           <Link
             href="/faq"
-            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
+            className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm"
           >
             <HelpCircle className="mr-2" /> FAQ
           </Link>
@@ -119,20 +119,20 @@ const Navbar = () => {
             <li>
               <Link
                 href="/"
-                className="text-gray-800 dark:text-white hover:text-vibrant-yellow transition-colors flex items-center text-sm"
+                className="text-gray-800 dark:text-white hover:text-vibrant-purple transition-colors flex items-center text-sm"
               >
                 <Home className="mr-2" /> Home
               </Link>
             </li>
             <li>
-              <Dropdown className="text-gray-800 dark:text-white hover:text-vibrant-yellow flex items-center text-sm">
+              <Dropdown className="text-gray-800 dark:text-white hover:text-vibrant-purple flex items-center text-sm">
                 Explore
               </Dropdown>
             </li>
             <li>
               <Link
                 href="/thrive-toolkit"
-                className="text-gray-800 dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
+                className="text-gray-800 dark:text-white hover:text-vibrant-purple flex items-center text-sm"
               >
                 <Settings className="mr-2" /> Thrive Toolkit
               </Link>
@@ -148,7 +148,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/contact"
-                className="text-gray-800 dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
+                className="text-gray-800 dark:text-white hover:text-vibrant-purple flex items-center text-sm"
               >
                 <Mail className="mr-2" /> Contact Us
               </Link>
@@ -156,7 +156,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/blog"
-                className="text-gray-800 dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
+                className="text-gray-800 dark:text-white hover:text-vibrant-purple flex items-center text-sm"
               >
                 <FileText className="mr-2" /> Blog
               </Link>
@@ -164,7 +164,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/faq"
-                className="text-gray-800 dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
+                className="text-gray-800 dark:text-white hover:text-vibrant-purple flex items-center text-sm"
               >
                 <HelpCircle className="mr-2" /> FAQ
               </Link>

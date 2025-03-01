@@ -71,11 +71,11 @@ export default {
         },
         "earth-brown": "#7B5B3A",
         "earth-beige": "#D9CBAE",
-        "earth-green": "#4A7C2A",
+        "earth-green": "#00AE56",
         "earth-terracotta": "#C65D3B",
         "vibrant-orange": "#FF6F20",
         "vibrant-blue": "#007BFF",
-        "vibrant-yellow": "#FFD700",
+        "vibrant-purple": "#510084",
       },
       borderRadius: {
         lg: "var(--radius)",

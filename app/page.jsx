@@ -1,6 +1,7 @@
 import FeaturesSection from "@/components/FeaturesSection";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
+import ShowCaseSection from "@/components/ShowCaseSection";
 import TrustedBySection from "@/components/TrustedBySection";
 import React from "react";
 
@@ -10,6 +11,9 @@ const Home = () => {
       <section>
         {/* Hero */}
         <HeroSection />
+
+        {/* ShowCase Section */}
+        <ShowCaseSection />
 
         {/* Features Section */}
         <FeaturesSection />
