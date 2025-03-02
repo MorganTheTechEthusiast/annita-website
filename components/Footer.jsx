@@ -9,9 +9,12 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { countries } from "@/Constants/constant";
+import Image from "next/image";
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState("us");
   const dropdownRef = useRef(null);
@@ -41,9 +44,7 @@ const Footer = () => {
   };
 
   const changeLanguage = (lang) => {
-    // Implement your language change logic here
-    console.log(`Language changed to: ${lang}`);
-    // You might want to use a library like i18next or similar for actual language changes
+    i18n.changeLanguage(lang);
   };
 
   return (
@@ -52,117 +53,119 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Products Column */}
           <div>
-            <h3 className="font-bold mb-4">Products</h3>
+            <h3 className="font-bold mb-4">{t("products")}</h3>
             <ul className="text-gray-600 dark:text-gray-300">
               <li>
-                <Link href="/collect-payments">Collect Payments</Link>
+                <Link href="/collect-payments">{t("collect_payments")}</Link>
               </li>
               <li>
-                <Link href="/send-money">Send Money</Link>
+                <Link href="/send-money">{t("send_money")}</Link>
               </li>
               <li>
-                <Link href="/store">Store</Link>
+                <Link href="/store">{t("store")}</Link>
               </li>
               <li>
-                <Link href="/payment-links">Payment Links</Link>
+                <Link href="/payment-links">{t("payment_links")}</Link>
               </li>
               <li>
-                <Link href="/invoices">Invoices</Link>
+                <Link href="/invoices">{t("invoices")}</Link>
               </li>
               <li>
-                <Link href="/capital">Capital</Link>
+                <Link href="/capital">{t("capital")}</Link>
               </li>
               <li>
-                <Link href="/grow">Grow</Link>
+                <Link href="/grow">{t("grow")}</Link>
               </li>
               <li>
-                <Link href="/card-issuing">Card Issuing</Link>
+                <Link href="/card-issuing">{t("card_issuing")}</Link>
               </li>
               <li>
-                <Link href="/annita-app">Annita App</Link>
+                <Link href="/annita-app">{t("annita_app")}</Link>
               </li>
               <li>
-                <Link href="/tuition">Tuition</Link>
+                <Link href="/tuition">{t("tuition")}</Link>
               </li>
             </ul>
           </div>
 
           {/* Resources Column */}
           <div>
-            <h3 className="font-bold mb-4">Resources</h3>
+            <h3 className="font-bold mb-4">{t("resources")}</h3>
             <ul className="text-gray-600 dark:text-gray-300">
               <li>
-                <Link href="/pricing">Pricing</Link>
+                <Link href="/pricing">{t("pricing")}</Link>
               </li>
               <li>
-                <Link href="/support">Support</Link>
+                <Link href="/support">{t("support")}</Link>
               </li>
               <li>
-                <Link href="/blog">Blog</Link>
+                <Link href="/blog">{t("blog")}</Link>
               </li>
               <li>
-                <Link href="/integrations">Integrations</Link>
+                <Link href="/integrations">{t("integrations")}</Link>
               </li>
               <li>
-                <Link href="/why-you-got-charged">Why you got charged</Link>
-              </li>
-              <li>
-                <Link href="/cookie-settings">Cookie settings</Link>
-              </li>
-              <li>
-                <Link href="/payment-protection-promise">
-                  Payment protection promise
+                <Link href="/why-you-got-charged">
+                  {t("why_you_got_charged")}
                 </Link>
               </li>
               <li>
-                <Link href="/dashboard-guide">Dashboard Guide</Link>
+                <Link href="/cookie-settings">{t("cookie_settings")}</Link>
+              </li>
+              <li>
+                <Link href="/payment-protection-promise">
+                  {t("payment_protection_promise")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/dashboard-guide">{t("dashboard_guide")}</Link>
               </li>
             </ul>
           </div>
 
           {/* Developers Column */}
           <div>
-            <h3 className="font-bold mb-4">Developers</h3>
+            <h3 className="font-bold mb-4">{t("developers")}</h3>
             <ul className="text-gray-600 dark:text-gray-300">
               <li>
-                <Link href="/api-documentation">API Documentation</Link>
+                <Link href="/api-documentation">{t("api_documentation")}</Link>
               </li>
               <li>
-                <Link href="/api-reference">API Reference</Link>
+                <Link href="/api-reference">{t("api_reference")}</Link>
               </li>
               <li>
-                <Link href="/api-status">API Status</Link>
+                <Link href="/api-status">{t("api_status")}</Link>
               </li>
             </ul>
           </div>
 
           {/* Company Column */}
           <div>
-            <h3 className="font-bold mb-4">Company</h3>
+            <h3 className="font-bold mb-4">{t("company")}</h3>
             <ul className="text-gray-600 dark:text-gray-300">
               <li>
-                <Link href="/customers">Customers</Link>
+                <Link href="/customers">{t("customers")}</Link>
               </li>
               <li>
-                <Link href="/careers">Careers</Link>
+                <Link href="/careers">{t("careers")}</Link>
               </li>
               <li>
-                <Link href="/press">Press</Link>
+                <Link href="/press">{t("press")}</Link>
               </li>
             </ul>
           </div>
 
           {/* Contact Column */}
           <div>
-            <h3 className="font-bold mb-4">Contact</h3>
+            <h3 className="font-bold mb-4">{t("contact")}</h3>
             <ul className="text-gray-600 dark:text-gray-300">
               <li>
                 <Link href="mailto:hi@flutterwavego.com">
-                  hi@flutterwavego.com
+                  {t("contact_email")}
                 </Link>
               </li>
               <li>
-                <Link href="/support">X Support</Link>
+                <Link href="/support">{t("x_support")}</Link>
               </li>
             </ul>
           </div>
@@ -250,7 +253,7 @@ const Footer = () => {
               Merchant service agreement
             </Link>
             <Link href="#" className="text-gray-600 dark:text-gray-300">
-              Send App licenses
+              Annita App licenses
             </Link>
           </div>
         </div>
