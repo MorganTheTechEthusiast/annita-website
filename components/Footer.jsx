@@ -13,6 +13,7 @@ import { countries } from "@/Constants/constant";
 
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState("us");
   const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
@@ -32,6 +33,18 @@ const Footer = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const handleCountryChange = (country) => {
+    setSelectedCountry(country.code);
+    // Change the language of the page based on the selected country
+    changeLanguage(country.lang);
+  };
+
+  const changeLanguage = (lang) => {
+    // Implement your language change logic here
+    console.log(`Language changed to: ${lang}`);
+    // You might want to use a library like i18next or similar for actual language changes
+  };
 
   return (
     <footer className="bg-gray-100 dark:bg-black/20 py-10">
@@ -144,10 +157,12 @@ const Footer = () => {
             <h3 className="font-bold mb-4">Contact</h3>
             <ul className="text-gray-600 dark:text-gray-300">
               <li>
-                <Link href="mailto:contact@annita.com">contact@annita.com</Link>
+                <Link href="mailto:hi@flutterwavego.com">
+                  hi@flutterwavego.com
+                </Link>
               </li>
               <li>
-                <Link href="/x.com/@annita">X Support</Link>
+                <Link href="/support">X Support</Link>
               </li>
             </ul>
           </div>
@@ -161,11 +176,14 @@ const Footer = () => {
           >
             <span className="flex items-center">
               <img
-                src={`https://flagcdn.com/w20/us.png`}
+                src={`https://flagcdn.com/w20/${selectedCountry}.png`}
                 alt="Country Flag"
                 className="w-5 h-5 mr-2"
               />
-              United States
+              {
+                countries.find((country) => country.code === selectedCountry)
+                  ?.name
+              }
             </span>
             <span className="text-gray-600 dark:text-gray-300">▼</span>
           </button>
@@ -178,6 +196,7 @@ const Footer = () => {
                 {countries.map((country) => (
                   <li
                     key={country.code}
+                    onClick={() => handleCountryChange(country)}
                     className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
                   >
                     <img

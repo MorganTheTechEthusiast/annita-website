@@ -37,6 +37,8 @@ export const countries = [
   { name: "Tanzania", code: "tz" },
   { name: "Uganda", code: "ug" },
   { name: "United Kingdom", code: "gb" },
+  { name: "Spain", code: "es" },
+  { name: "France", code: "fr" },
 ];
 
 export const services = [
