@@ -138,10 +138,10 @@ const Footer = () => {
         </div>
 
         {/* Country Selector */}
-        <div className="mt-5 relative">
+        <div className="mt-5 flex flex-col md:flex-row justify-between items-center">
           <button
             onClick={toggleDropdown}
-            className="flex items-center border border-gray-300 rounded-md p-2 w-full justify-between"
+            className="flex items-center border border-gray-300 rounded-md p-2 w-full md:w-auto justify-between"
           >
             <span className="flex items-center">
               <img
@@ -154,7 +154,7 @@ const Footer = () => {
             <span className="text-gray-600 dark:text-gray-300">▼</span>
           </button>
           {isOpen && (
-            <div className="absolute z-10 bg-white dark:bg-black rounded-md shadow-lg mt-1 w-full">
+            <div className="absolute z-10 bg-white dark:bg-black rounded-md shadow-lg mt-1 w-full md:w-auto">
               <ul className="py-2">
                 <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
                   Cameroon
