@@ -8,8 +8,15 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import Link from "next/link";
+import { useState } from "react";
 
 const Footer = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <footer className="bg-gray-100 dark:bg-black/20 py-10">
       <div className="container mx-auto px-5 md:px-20">
@@ -131,24 +138,69 @@ const Footer = () => {
         </div>
 
         {/* Country Selector */}
-        <div className="mt-5">
-          <select className="border border-gray-300 rounded-md p-2">
-            <option value="us">United States</option>
-            <option value="uk">United Kingdom</option>
-            <option value="ng">Liberia</option>
-            <option value="ca">Canada</option>
-            <option value="au">Australia</option>
-            <option value="de">Germany</option>
-            <option value="fr">France</option>
-            <option value="es">Spain</option>
-            <option value="it">Italy</option>
-            <option value="jp">Japan</option>
-            <option value="cn">China</option>
-            <option value="in">India</option>
-            <option value="br">Brazil</option>
-            <option value="za">South Africa</option>
-            <option value="mx">Mexico</option>
-          </select>
+        <div className="mt-5 relative">
+          <button
+            onClick={toggleDropdown}
+            className="flex items-center border border-gray-300 rounded-md p-2 w-full justify-between"
+          >
+            <span className="flex items-center">
+              <img
+                src="/path-to-flag.png"
+                alt="Country Flag"
+                className="w-5 h-5 mr-2"
+              />
+              United States
+            </span>
+            <span className="text-gray-600 dark:text-gray-300">▼</span>
+          </button>
+          {isOpen && (
+            <div className="absolute z-10 bg-white dark:bg-black rounded-md shadow-lg mt-1 w-full">
+              <ul className="py-2">
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  Cameroon
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  Egypt
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  Ghana
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  Ivory Coast
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  Kenya
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  Malawi
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  Mauritius
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  Nigeria
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  Rwanda
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  Senegal
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  South Africa
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  Tanzania
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  Uganda
+                </li>
+                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
+                  United Kingdom
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
 
         {/* Social Media Links */}
