@@ -21,6 +21,24 @@ export const features = [
   },
 ];
 
+export const countries = [
+  { name: "United States", code: "us" },
+  { name: "Cameroon", code: "cm" },
+  { name: "Egypt", code: "eg" },
+  { name: "Ghana", code: "gh" },
+  { name: "Ivory Coast", code: "ci" },
+  { name: "Kenya", code: "ke" },
+  { name: "Malawi", code: "mw" },
+  { name: "Mauritius", code: "mu" },
+  { name: "Liberia", code: "lr" },
+  { name: "Rwanda", code: "rw" },
+  { name: "Senegal", code: "sn" },
+  { name: "South Africa", code: "za" },
+  { name: "Tanzania", code: "tz" },
+  { name: "Uganda", code: "ug" },
+  { name: "United Kingdom", code: "gb" },
+];
+
 export const services = [
   {
     icon: (

@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import { countries } from "@/Constants/constant";
 
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -160,7 +161,7 @@ const Footer = () => {
           >
             <span className="flex items-center">
               <img
-                src="/path-to-flag.png"
+                src={`https://flagcdn.com/w20/us.png`}
                 alt="Country Flag"
                 className="w-5 h-5 mr-2"
               />
@@ -174,48 +175,19 @@ const Footer = () => {
               className="absolute z-10 bg-white dark:bg-black rounded-md shadow-lg mt-1 w-full md:w-auto"
             >
               <ul className="py-2">
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  Cameroon
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  Egypt
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  Ghana
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  Ivory Coast
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  Kenya
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  Malawi
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  Mauritius
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  Nigeria
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  Rwanda
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  Senegal
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  South Africa
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  Tanzania
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  Uganda
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
-                  United Kingdom
-                </li>
+                {countries.map((country) => (
+                  <li
+                    key={country.code}
+                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
+                  >
+                    <img
+                      src={`https://flagcdn.com/w20/${country.code}.png`}
+                      alt={`${country.name} Flag`}
+                      className="w-5 h-5 mr-2"
+                    />
+                    {country.name}
+                  </li>
+                ))}
               </ul>
             </div>
           )}
