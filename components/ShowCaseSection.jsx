@@ -26,8 +26,8 @@ const ShowCaseSection = () => {
           />
         </div>
       </div>
-      <div className="flex md:max-w-[30rem] md:px-0 px-20 items-center justify-center  md:relative flex-wrap right-0 md:ml-[50rem] md:bottom-56">
-        <p className="text-wrap text-3xl font-thin">
+      <div className="md:flex md:max-w-[50rem] md:px-5 px-10 items-center justify-center  md:relative md:ml-[50rem] md:bottom-52">
+        <p className="md:text-wrap md:text-left text-4xl font-thin">
           <span className="text-vibrant-purple bg-vibrant-blue">Whether</span>{" "}
           you're sending money to family, launching your online store, managing
           global transactions for your enterprise, or creating innovative

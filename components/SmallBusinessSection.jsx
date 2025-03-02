@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const SmallBusinessSection = () => {
   return (
-    <section className="py-20 px-10 md:px-20 bg-gray-100 dark:bg-black/20">
+    <section className="py-20 px-5  md:px-20 bg-gray-100 dark:bg-black/20">
       <div className="container mx-auto text-left">
         <h2 className="text-6xl font-bold mb-4 text-gray-800 dark:text-gray-300">
           Endless payment possibilities for every{" "}

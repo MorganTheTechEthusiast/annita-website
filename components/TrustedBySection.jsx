@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const TrustedBySection = () => {
   return (
-    <section className="py-20 px-20 bg-gray-100 dark:bg-black/20">
+    <section className="py-20 px-5 md:px-20 bg-gray-100 dark:bg-black/20">
       <div className="container mx-auto text-center">
         <h2 className="text-2xl mb-3 text-black/60 dark:text-gray-300">
           We are trusted by <span className="font-extrabold">1 million+</span>{" "}
