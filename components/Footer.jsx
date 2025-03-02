@@ -8,14 +8,29 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <footer className="bg-gray-100 dark:bg-black/20 py-10">
@@ -154,7 +169,10 @@ const Footer = () => {
             <span className="text-gray-600 dark:text-gray-300">▼</span>
           </button>
           {isOpen && (
-            <div className="absolute z-10 bg-white dark:bg-black rounded-md shadow-lg mt-1 w-full md:w-auto">
+            <div
+              ref={dropdownRef}
+              className="absolute z-10 bg-white dark:bg-black rounded-md shadow-lg mt-1 w-full md:w-auto"
+            >
               <ul className="py-2">
                 <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer">
                   Cameroon
