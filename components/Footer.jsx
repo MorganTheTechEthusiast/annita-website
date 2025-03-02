@@ -1,5 +1,14 @@
 "use client";
 
+import {
+  FaTwitter,
+  FaFacebook,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedin,
+} from "react-icons/fa";
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-100 dark:bg-black/20 py-10">
@@ -9,18 +18,36 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4">Products</h3>
             <ul className="text-gray-600 dark:text-gray-300">
-              <li>Collect Payments</li>
-              <li>Send Money</li>
-              <li>Store</li>
-              <li>Payment Links</li>
-              <li>Invoices</li>
-              <li>Capital</li>
-              <li>Grow</li>
-              <li>Card Issuing</li>
-              <li>FaaS</li>
-              <li>Disha</li>
-              <li>Send App</li>
-              <li>Tuition</li>
+              <li>
+                <Link href="/collect-payments">Collect Payments</Link>
+              </li>
+              <li>
+                <Link href="/send-money">Send Money</Link>
+              </li>
+              <li>
+                <Link href="/store">Store</Link>
+              </li>
+              <li>
+                <Link href="/payment-links">Payment Links</Link>
+              </li>
+              <li>
+                <Link href="/invoices">Invoices</Link>
+              </li>
+              <li>
+                <Link href="/capital">Capital</Link>
+              </li>
+              <li>
+                <Link href="/grow">Grow</Link>
+              </li>
+              <li>
+                <Link href="/card-issuing">Card Issuing</Link>
+              </li>
+              <li>
+                <Link href="/annita-app">Annita App</Link>
+              </li>
+              <li>
+                <Link href="/tuition">Tuition</Link>
+              </li>
             </ul>
           </div>
 
@@ -28,14 +55,32 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4">Resources</h3>
             <ul className="text-gray-600 dark:text-gray-300">
-              <li>Pricing</li>
-              <li>Support</li>
-              <li>Blog</li>
-              <li>Integrations</li>
-              <li>Why you got charged</li>
-              <li>Cookie settings</li>
-              <li>Payment protection promise</li>
-              <li>Dashboard Guide</li>
+              <li>
+                <Link href="/pricing">Pricing</Link>
+              </li>
+              <li>
+                <Link href="/support">Support</Link>
+              </li>
+              <li>
+                <Link href="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link href="/integrations">Integrations</Link>
+              </li>
+              <li>
+                <Link href="/why-you-got-charged">Why you got charged</Link>
+              </li>
+              <li>
+                <Link href="/cookie-settings">Cookie settings</Link>
+              </li>
+              <li>
+                <Link href="/payment-protection-promise">
+                  Payment protection promise
+                </Link>
+              </li>
+              <li>
+                <Link href="/dashboard-guide">Dashboard Guide</Link>
+              </li>
             </ul>
           </div>
 
@@ -43,9 +88,15 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4">Developers</h3>
             <ul className="text-gray-600 dark:text-gray-300">
-              <li>API Documentation</li>
-              <li>API Reference</li>
-              <li>API Status</li>
+              <li>
+                <Link href="/api-documentation">API Documentation</Link>
+              </li>
+              <li>
+                <Link href="/api-reference">API Reference</Link>
+              </li>
+              <li>
+                <Link href="/api-status">API Status</Link>
+              </li>
             </ul>
           </div>
 
@@ -53,10 +104,15 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4">Company</h3>
             <ul className="text-gray-600 dark:text-gray-300">
-              <li>Customers</li>
-              <li>Careers</li>
-              <li>Press</li>
-              <li>Covid 19</li>
+              <li>
+                <Link href="/customers">Customers</Link>
+              </li>
+              <li>
+                <Link href="/careers">Careers</Link>
+              </li>
+              <li>
+                <Link href="/press">Press</Link>
+              </li>
             </ul>
           </div>
 
@@ -64,33 +120,77 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4">Contact</h3>
             <ul className="text-gray-600 dark:text-gray-300">
-              <li>hi@flutterwavego.com</li>
-              <li>X Support</li>
+              <li>
+                <Link href="mailto:contact@annita.com">contact@annita.com</Link>
+              </li>
+              <li>
+                <Link href="/x.com/@annita">X Support</Link>
+              </li>
             </ul>
           </div>
+        </div>
+
+        {/* Country Selector */}
+        <div className="mt-5">
+          <select className="border border-gray-300 rounded-md p-2">
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ng">Liberia</option>
+            <option value="ca">Canada</option>
+            <option value="au">Australia</option>
+            <option value="de">Germany</option>
+            <option value="fr">France</option>
+            <option value="es">Spain</option>
+            <option value="it">Italy</option>
+            <option value="jp">Japan</option>
+            <option value="cn">China</option>
+            <option value="in">India</option>
+            <option value="br">Brazil</option>
+            <option value="za">South Africa</option>
+            <option value="mx">Mexico</option>
+          </select>
+        </div>
+
+        {/* Social Media Links */}
+        <div className="flex justify-center space-x-4 mt-5">
+          <Link href="#" className="text-gray-600 dark:text-gray-300">
+            <FaTwitter />
+          </Link>
+          <Link href="#" className="text-gray-600 dark:text-gray-300">
+            <FaFacebook />
+          </Link>
+          <Link href="#" className="text-gray-600 dark:text-gray-300">
+            <FaInstagram />
+          </Link>
+          <Link href="#" className="text-gray-600 dark:text-gray-300">
+            <FaYoutube />
+          </Link>
+          <Link href="#" className="text-gray-600 dark:text-gray-300">
+            <FaLinkedin />
+          </Link>
         </div>
 
         {/* Bottom Links */}
         <div className="mt-10 text-center">
           <p className="text-gray-600 dark:text-gray-300">
-            © Annita. All rights reserved.
+            © Annita {new Date().getFullYear()}. All rights reserved.
           </p>
           <div className="flex justify-center space-x-4 mt-2">
-            <a href="#" className="text-gray-600 dark:text-gray-300">
+            <Link href="#" className="text-gray-600 dark:text-gray-300">
               Privacy notice
-            </a>
-            <a href="#" className="text-gray-600 dark:text-gray-300">
+            </Link>
+            <Link href="#" className="text-gray-600 dark:text-gray-300">
               Terms of use
-            </a>
-            <a href="#" className="text-gray-600 dark:text-gray-300">
+            </Link>
+            <Link href="#" className="text-gray-600 dark:text-gray-300">
               Cookie notice
-            </a>
-            <a href="#" className="text-gray-600 dark:text-gray-300">
+            </Link>
+            <Link href="#" className="text-gray-600 dark:text-gray-300">
               Merchant service agreement
-            </a>
-            <a href="#" className="text-gray-600 dark:text-gray-300">
+            </Link>
+            <Link href="#" className="text-gray-600 dark:text-gray-300">
               Send App licenses
-            </a>
+            </Link>
           </div>
         </div>
       </div>
