@@ -11,7 +11,6 @@ import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { countries } from "@/Constants/constant";
-import Image from "next/image";
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -23,7 +22,6 @@ const Footer = () => {
     setIsOpen(!isOpen);
   };
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -39,11 +37,11 @@ const Footer = () => {
 
   const handleCountryChange = (country) => {
     setSelectedCountry(country.code);
-    // Change the language of the page based on the selected country
     changeLanguage(country.lang);
   };
 
   const changeLanguage = (lang) => {
+    console.log(i18n);
     i18n.changeLanguage(lang);
   };
 
@@ -53,119 +51,112 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Products Column */}
           <div>
-            <h3 className="font-bold mb-4">{t("products")}</h3>
+            <h3 className="font-bold mb-4">{t("Products")}</h3>
             <ul className="text-gray-600 dark:text-gray-300">
               <li>
-                <Link href="/collect-payments">{t("collect_payments")}</Link>
+                <Link href="/collect-payments">{t("Collect Payments")}</Link>
               </li>
               <li>
-                <Link href="/send-money">{t("send_money")}</Link>
+                <Link href="/send-money">{t("Send Money")}</Link>
               </li>
               <li>
-                <Link href="/store">{t("store")}</Link>
+                <Link href="/store">{t("Store")}</Link>
               </li>
               <li>
-                <Link href="/payment-links">{t("payment_links")}</Link>
+                <Link href="/payment-links">{t("Payment Links")}</Link>
               </li>
               <li>
-                <Link href="/invoices">{t("invoices")}</Link>
+                <Link href="/invoices">{t("Invoices")}</Link>
               </li>
               <li>
-                <Link href="/capital">{t("capital")}</Link>
+                <Link href="/capital">{t("Capital")}</Link>
               </li>
               <li>
-                <Link href="/grow">{t("grow")}</Link>
+                <Link href="/grow">{t("Grow")}</Link>
               </li>
               <li>
-                <Link href="/card-issuing">{t("card_issuing")}</Link>
+                <Link href="/card-issuing">{t("Card Issuing")}</Link>
               </li>
               <li>
-                <Link href="/annita-app">{t("annita_app")}</Link>
+                <Link href="/annita-app">{t("Annita App")}</Link>
               </li>
               <li>
-                <Link href="/tuition">{t("tuition")}</Link>
+                <Link href="/tuition">{t("Tuition")}</Link>
               </li>
             </ul>
           </div>
 
           {/* Resources Column */}
           <div>
-            <h3 className="font-bold mb-4">{t("resources")}</h3>
+            <h3 className="font-bold mb-4">{t("Resources")}</h3>
             <ul className="text-gray-600 dark:text-gray-300">
               <li>
-                <Link href="/pricing">{t("pricing")}</Link>
+                <Link href="/pricing">{t("Pricing")}</Link>
               </li>
               <li>
-                <Link href="/support">{t("support")}</Link>
+                <Link href="/support">{t("Support")}</Link>
               </li>
               <li>
-                <Link href="/blog">{t("blog")}</Link>
+                <Link href="/blog">{t("Blog")}</Link>
               </li>
               <li>
-                <Link href="/integrations">{t("integrations")}</Link>
+                <Link href="/integrations">{t("Integrations")}</Link>
               </li>
               <li>
-                <Link href="/why-you-got-charged">
-                  {t("why_you_got_charged")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/cookie-settings">{t("cookie_settings")}</Link>
+                <Link href="/cookie-settings">{t("Cookie Settings")}</Link>
               </li>
               <li>
                 <Link href="/payment-protection-promise">
-                  {t("payment_protection_promise")}
+                  {t("Payment Protection Promise")}
                 </Link>
               </li>
               <li>
-                <Link href="/dashboard-guide">{t("dashboard_guide")}</Link>
+                <Link href="/dashboard-guide">{t("Dashboard Guide")}</Link>
               </li>
             </ul>
           </div>
 
           {/* Developers Column */}
           <div>
-            <h3 className="font-bold mb-4">{t("developers")}</h3>
+            <h3 className="font-bold mb-4">{t("Developers")}</h3>
             <ul className="text-gray-600 dark:text-gray-300">
               <li>
-                <Link href="/api-documentation">{t("api_documentation")}</Link>
+                <Link href="/api-documentation">{t("API Documentation")}</Link>
               </li>
               <li>
-                <Link href="/api-reference">{t("api_reference")}</Link>
+                <Link href="/api-reference">{t("API Reference")}</Link>
               </li>
               <li>
-                <Link href="/api-status">{t("api_status")}</Link>
+                <Link href="/api-status">{t("API Status")}</Link>
               </li>
             </ul>
           </div>
 
           {/* Company Column */}
           <div>
-            <h3 className="font-bold mb-4">{t("company")}</h3>
+            <h3 className="font-bold mb-4">{t("Company")}</h3>
             <ul className="text-gray-600 dark:text-gray-300">
               <li>
-                <Link href="/customers">{t("customers")}</Link>
+                <Link href="/customers">{t("Customers")}</Link>
               </li>
               <li>
-                <Link href="/careers">{t("careers")}</Link>
+                <Link href="/careers">{t("Careers")}</Link>
               </li>
               <li>
-                <Link href="/press">{t("press")}</Link>
+                <Link href="/press">{t("Press")}</Link>
               </li>
             </ul>
           </div>
 
           {/* Contact Column */}
           <div>
-            <h3 className="font-bold mb-4">{t("contact")}</h3>
+            <h3 className="font-bold mb-4">{t("Contact")}</h3>
             <ul className="text-gray-600 dark:text-gray-300">
               <li>
-                <Link href="mailto:hi@flutterwavego.com">
-                  {t("contact_email")}
-                </Link>
+                <Link href="mailto:contact@annita.com">{t("Contact Us")}</Link>
               </li>
               <li>
-                <Link href="/support">{t("x_support")}</Link>
+                <Link href="/support">{t("X Support")}</Link>
               </li>
             </ul>
           </div>

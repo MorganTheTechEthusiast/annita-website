@@ -30,7 +30,6 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    // Check local storage for theme preference
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
       setIsDarkMode(savedTheme === "dark");
@@ -38,9 +37,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    // Apply the theme class to the body
     document.body.classList.toggle("dark", isDarkMode);
-    // Save the theme preference to local storage
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
   }, [isDarkMode]);
 
