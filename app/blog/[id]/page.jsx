@@ -71,11 +71,12 @@ const BlogPost = ({ params }) => {
             value={comment}
             onChange={(e) => setComment(e.target.value)}
             placeholder="Leave a comment..."
-            className="border border-gray-300 p-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-vibrant-orange"
+            className="border border-gray-300 p-2 rounded-md w-full max-w-md focus:outline-none focus:ring-2 focus:ring-vibrant-orange bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-300"
+            style={{ minHeight: "100px" }}
           />
           <button
             type="submit"
-            className="bg-green-500 text-white p-2 rounded-md mt-2 hover:bg-green-600 transition duration-200"
+            className="bg-black text-vibrant-orange p-2 rounded-md mt-8 md:ml-8 hover:border-vibrant-orange border transition duration-200"
           >
             Submit Comment
           </button>
