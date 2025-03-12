@@ -96,13 +96,12 @@ export const posts = [
   },
 ];
 
-// Dummy data for blog posts
+// Updated structure for post_id in "@/Constants/constant.js"
 export const post_id = {
   "future-of-payments": {
     id: "future-of-payments",
     title: "The Future of Payments in Africa",
-    content:
-      "Exploring the trends and innovations shaping the payment landscape.",
+    content: "Exploring the trends and innovations shaping the payment landscape.",
     image: "/dummy-image1.jpg", // Replace with actual image paths
     category: "Finance",
     likes: 0,
@@ -131,6 +130,42 @@ export const post_id = {
     title: "Tips for Managing Your Finances",
     content: "Practical advice for budgeting and saving effectively.",
     image: "/dummy-image4.jpg",
+    category: "Finance",
+    likes: 0,
+    comments: [],
+  },
+  "digital-marketing-strategies": {
+    id: "digital-marketing-strategies",
+    title: "Effective Digital Marketing Strategies",
+    content: "Learn how to leverage digital marketing to grow your business.",
+    image: "/dummy-image5.jpg",
+    category: "Marketing",
+    likes: 0,
+    comments: [],
+  },
+  "sustainable-business-practices": {
+    id: "sustainable-business-practices",
+    title: "Sustainable Business Practices",
+    content: "How to implement sustainability in your business model.",
+    image: "/dummy-image6.jpg",
+    category: "Sustainability",
+    likes: 0,
+    comments: [],
+  },
+  "navigating-remote-work": {
+    id: "navigating-remote-work",
+    title: "Navigating Remote Work",
+    content: "Tips and tools for effective remote work management.",
+    image: "/dummy-image7.jpg",
+    category: "Work Culture",
+    likes: 0,
+    comments: [],
+  },
+  "financial-literacy-for-beginners": {
+    id: "financial-literacy-for-beginners",
+    title: "Financial Literacy for Beginners",
+    content: "Understanding the basics of personal finance.",
+    image: "/dummy-image8.jpg",
     category: "Finance",
     likes: 0,
     comments: [],
