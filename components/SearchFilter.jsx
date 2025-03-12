@@ -1,4 +1,10 @@
 import { useState } from "react";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "./ui/dropdown-menu";
 
 const SearchFilter = ({ posts, setFilteredPosts }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -26,23 +32,26 @@ const SearchFilter = ({ posts, setFilteredPosts }) => {
         placeholder="Search by title..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="border p-2 rounded-md mb-2 md:mb-0 md:mr-2"
+        className="border border-gray-300 rounded-md p-2 mb-2 md:mb-0 md:mr-2 focus:outline-none focus:ring-2 focus:ring-vibrant-orange"
       />
-      <select
-        value={selectedCategory}
-        onChange={(e) => setSelectedCategory(e.target.value)}
-        className="border p-2 rounded-md mb-2 md:mb-0 md:mr-2"
-      >
-        <option value="">All Categories</option>
-        {categories.map((category, index) => (
-          <option key={index} value={category}>
-            {category}
-          </option>
-        ))}
-      </select>
+      <DropdownMenu>
+        <DropdownMenuTrigger className="border border-gray-300 rounded-md p-2 mb-2 md:mb-0 md:mr-2 focus:outline-none focus:ring-2 focus:ring-vibrant-orange">
+          {selectedCategory || "Select Category"}
+        </DropdownMenuTrigger>
+        <DropdownMenuContent>
+          {categories.map((category, index) => (
+            <DropdownMenuItem
+              key={index}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </DropdownMenuItem>
+          ))}
+        </DropdownMenuContent>
+      </DropdownMenu>
       <button
         onClick={handleSearch}
-        className="bg-blue-500 text-white p-2 rounded-md"
+        className="bg-vibrant-orange text-white p-2 rounded-md hover:bg-orange-600 transition duration-200"
       >
         Search
       </button>

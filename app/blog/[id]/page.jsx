@@ -62,7 +62,7 @@ const BlogPost = ({ params }) => {
         </p>
         <button
           onClick={handleLike}
-          className="bg-vibrant-orange text-white p-2 rounded-md mt-4"
+          className="bg-vibrant-orange text-white p-2 rounded-md mt-4 hover:bg-orange-600 transition duration-200"
         >
           Like {likes}
         </button>
@@ -71,11 +71,11 @@ const BlogPost = ({ params }) => {
             value={comment}
             onChange={(e) => setComment(e.target.value)}
             placeholder="Leave a comment..."
-            className="border p-2 rounded-md w-full"
+            className="border border-gray-300 p-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-vibrant-orange"
           />
           <button
             type="submit"
-            className="bg-green-500 text-white p-2 rounded-md mt-2"
+            className="bg-green-500 text-white p-2 rounded-md mt-2 hover:bg-green-600 transition duration-200"
           >
             Submit Comment
           </button>
