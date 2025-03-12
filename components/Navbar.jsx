@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`backdrop-blur-md bg-white/30 dark:bg-black/30 p-4 shadow-md fixed w-full z-20 top-0 left-0 right-0`}
+      className={`backdrop-blur-md bg-white/30 dark:bg-black/30 p-4 shadow-md fixed w-full z-50 top-0 left-0 right-0`}
     >
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="flex gap-2 items-center">

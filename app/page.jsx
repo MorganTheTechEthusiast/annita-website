@@ -4,6 +4,7 @@ import ServicesSection from "@/components/ServicesSection";
 import ShowCaseSection from "@/components/ShowCaseSection";
 import TrustedBySection from "@/components/TrustedBySection";
 import SmallBusinessSection from "@/components/SmallBusinessSection";
+import IndividualSection from "@/components/IndividualSection";
 import React from "react";
 
 const Home = () => {
@@ -26,6 +27,9 @@ const Home = () => {
 
         {/* Small Business Section */}
         <SmallBusinessSection />
+
+        {/* Individual Section */}
+        <IndividualSection />
       </section>
     </div>
   );
