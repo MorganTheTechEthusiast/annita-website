@@ -3,16 +3,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes, FaSun, FaMoon } from "react-icons/fa";
-import {
-  Home,
-  ShoppingCart,
-  Users,
-  Settings,
-  Info,
-  Mail,
-  FileText,
-  HelpCircle,
-} from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Dropdown from "./Dropdown";
@@ -57,7 +47,7 @@ const Navbar = () => {
             href="/"
             className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm"
           >
-            <Home className="mr-2" /> Home
+            Home
           </Link>
           <Dropdown className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm">
             Explore
@@ -66,31 +56,31 @@ const Navbar = () => {
             href="/thrive-toolkit"
             className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm"
           >
-            <Settings className="mr-2" /> Thrive Toolkit
+            Thrive Toolkit
           </Link>
           <Link
             href="/about"
             className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm"
           >
-            <Info className="mr-2" /> About Us
+            About Us
           </Link>
           <Link
             href="/contact"
             className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm"
           >
-            <Mail className="mr-2" /> Contact Us
+            Contact Us
           </Link>
           <Link
             href="/blog"
             className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm"
           >
-            <FileText className="mr-2" /> Blog
+            Blog
           </Link>
           <Link
             href="/faq"
             className="text-gray-800 transition-all dark:text-white hover:text-vibrant-purple flex items-center text-sm"
           >
-            <HelpCircle className="mr-2" /> FAQ
+            FAQ
           </Link>
         </div>
         <div className="flex items-center">
@@ -118,7 +108,7 @@ const Navbar = () => {
                 href="/"
                 className="text-gray-800 dark:text-white hover:text-vibrant-purple transition-colors flex items-center text-sm"
               >
-                <Home className="mr-2" /> Home
+                Home
               </Link>
             </li>
             <li>
@@ -131,15 +121,15 @@ const Navbar = () => {
                 href="/thrive-toolkit"
                 className="text-gray-800 dark:text-white hover:text-vibrant-purple flex items-center text-sm"
               >
-                <Settings className="mr-2" /> Thrive Toolkit
+                Thrive Toolkit
               </Link>
             </li>
             <li>
               <Link
                 href="/about"
-                className="text-gray-800 dark:text-white hover:text-vibrant-yellow flex items-center text-sm"
+                className="text-gray-800 dark:text-white hover:text-vibrant-purple flex items-center text-sm"
               >
-                <Info className="mr-2" /> About Us
+                About Us
               </Link>
             </li>
             <li>
@@ -147,7 +137,7 @@ const Navbar = () => {
                 href="/contact"
                 className="text-gray-800 dark:text-white hover:text-vibrant-purple flex items-center text-sm"
               >
-                <Mail className="mr-2" /> Contact Us
+                Contact Us
               </Link>
             </li>
             <li>
@@ -155,7 +145,7 @@ const Navbar = () => {
                 href="/blog"
                 className="text-gray-800 dark:text-white hover:text-vibrant-purple flex items-center text-sm"
               >
-                <FileText className="mr-2" /> Blog
+                Blog
               </Link>
             </li>
             <li>
@@ -163,7 +153,7 @@ const Navbar = () => {
                 href="/faq"
                 className="text-gray-800 dark:text-white hover:text-vibrant-purple flex items-center text-sm"
               >
-                <HelpCircle className="mr-2" /> FAQ
+                FAQ
               </Link>
             </li>
           </ul>
