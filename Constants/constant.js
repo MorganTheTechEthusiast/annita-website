@@ -66,3 +66,57 @@ export const services = [
     buttonText: "Learn More >",
   },
 ];
+
+// Dummy blog content
+export const posts = [
+  {
+    title: "The Future of Payments in Africa",
+    excerpt:
+      "Exploring the trends and innovations shaping the payment landscape.",
+    image: "/dummy-image1.jpg", // Replace with actual image paths
+    link: "/blog/future-of-payments",
+  },
+  {
+    title: "How to Start an E-commerce Business",
+    excerpt: "A step-by-step guide to launching your online store.",
+    image: "/dummy-image2.jpg", // Replace with actual image paths
+    link: "/blog/start-ecommerce",
+  },
+  {
+    title: "Understanding Cryptocurrency",
+    excerpt: "A beginner's guide to the world of digital currencies.",
+    image: "/dummy-image3.jpg", // Replace with actual image paths
+    link: "/blog/understanding-crypto",
+  },
+  {
+    title: "Tips for Managing Your Finances",
+    excerpt: "Practical advice for budgeting and saving effectively.",
+    image: "/dummy-image4.jpg", // Replace with actual image paths
+    link: "/blog/managing-finances",
+  },
+];
+
+// Dummy data for blog posts
+export const post_id = {
+  "future-of-payments": {
+    title: "The Future of Payments in Africa",
+    content:
+      "Exploring the trends and innovations shaping the payment landscape.",
+    image: "/dummy-image1.jpg", // Replace with actual image paths
+  },
+  "start-ecommerce": {
+    title: "How to Start an E-commerce Business",
+    content: "A step-by-step guide to launching your online store.",
+    image: "/dummy-image2.jpg", // Replace with actual image paths
+  },
+  "understanding-crypto": {
+    title: "Understanding Cryptocurrency",
+    content: "A beginner's guide to the world of digital currencies.",
+    image: "/dummy-image3.jpg", // Replace with actual image paths
+  },
+  "managing-finances": {
+    title: "Tips for Managing Your Finances",
+    content: "Practical advice for budgeting and saving effectively.",
+    image: "/dummy-image4.jpg", // Replace with actual image paths
+  },
+};
