@@ -17,8 +17,9 @@ const SmallBusinessSection = () => {
           <div className="p-6 bg-white dark:bg-black/15 rounded-lg shadow-md col-span-1 md:col-span-2">
             <h3 className="text-2xl font-semibold mb-2">Store</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Create a free e-commerce website and start selling worldwide with
-              just a few clicks.
+              Build your free e-commerce website today and effortlessly connect
+              with customers around the world, expanding your business reach in
+              just a few simple steps.
             </p>
             <Link href="/store">
               <button className="bg-black text-vibrant-orange py-2 px-4 rounded-lg font-semibold">
@@ -31,8 +32,8 @@ const SmallBusinessSection = () => {
           <div className="p-6 bg-white dark:bg-black/15 rounded-lg shadow-md col-span-1 md:col-span-1">
             <h3 className="text-2xl font-semibold mb-2">Invoices</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Generate professional invoices for your customers and get paid
-              from anywhere.
+              Effortlessly create and send customized invoices to your clients,
+              ensuring timely payments from any location.
             </p>
             <Link href="/invoices">
               <button className="bg-black text-vibrant-orange py-2 px-4 rounded-lg font-semibold">
@@ -41,12 +42,22 @@ const SmallBusinessSection = () => {
             </Link>
           </div>
 
+          <div className="flex justify-center items-center col-span-1 md:col-span-1">
+            <Image
+              src="/home_image.jpg"
+              alt="Small Business"
+              width={400}
+              height={300}
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+
           {/* Service 3 */}
           <div className="p-6 bg-white dark:bg-black/15 rounded-lg shadow-md col-span-1 md:col-span-1">
             <h3 className="text-2xl font-semibold mb-2">Payment Links</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Receive one-off or recurring payments from anyone, anywhere, via
-              your unique payment link.
+              Effortlessly accept one-time or subscription payments from
+              customers worldwide using your personalized payment link.
             </p>
             <Link href="/payment-links">
               <button className="bg-black text-vibrant-orange py-2 px-4 rounded-lg font-semibold">
