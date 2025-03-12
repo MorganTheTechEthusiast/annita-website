@@ -99,24 +99,40 @@ export const posts = [
 // Dummy data for blog posts
 export const post_id = {
   "future-of-payments": {
+    id: "future-of-payments",
     title: "The Future of Payments in Africa",
     content:
       "Exploring the trends and innovations shaping the payment landscape.",
     image: "/dummy-image1.jpg", // Replace with actual image paths
+    category: "Finance",
+    likes: 0,
+    comments: [],
   },
   "start-ecommerce": {
+    id: "start-ecommerce",
     title: "How to Start an E-commerce Business",
     content: "A step-by-step guide to launching your online store.",
     image: "/dummy-image2.jpg", // Replace with actual image paths
+    category: "E-commerce",
+    likes: 0,
+    comments: [],
   },
   "understanding-crypto": {
+    id: "understanding-crypto",
     title: "Understanding Cryptocurrency",
     content: "A beginner's guide to the world of digital currencies.",
-    image: "/dummy-image3.jpg", // Replace with actual image paths
+    image: "/dummy-image3.jpg",
+    category: "Cryptocurrency",
+    likes: 0,
+    comments: [],
   },
   "managing-finances": {
+    id: "managing-finances",
     title: "Tips for Managing Your Finances",
     content: "Practical advice for budgeting and saving effectively.",
-    image: "/dummy-image4.jpg", // Replace with actual image paths
+    image: "/dummy-image4.jpg",
+    category: "Finance",
+    likes: 0,
+    comments: [],
   },
 };
