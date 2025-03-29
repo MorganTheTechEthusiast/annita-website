@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-
 const About = () => {
   return (
     <section className="px-6 py-12 md:px-20 md:py-20 bg-gray-100">
